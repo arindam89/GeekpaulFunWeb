@@ -9,7 +9,7 @@ function handleClick() {
   hero.classList.add("jumping");
   setTimeout(() => {
     hero.classList.remove("jumping");
-  }, 600);
+  }, 400);
 }
 
 game.addEventListener("click", handleClick);
@@ -26,8 +26,8 @@ setInterval(() => {
 
   // Game Over Condition
   if (treeX < 30 && treeX > 10 && heroY > 160) {
+    tree.style.transition = "none";
     alert("Game over");
     tree.remove();
-    tree.style.transition = "none";
   }
 }, 10);
