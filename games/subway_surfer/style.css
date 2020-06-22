@@ -1,0 +1,46 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;;
+}
+
+#main {
+  width: 300px;
+  height: 600px;
+  margin: auto;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#obstacle {
+  width: 100px;
+  height: 100px;
+  background-color: darkgreen;
+  position: absolute;
+  animation: drop 1s linear infinite;
+}
+
+.drop {
+  animation: drop .5s linear;
+}
+
+@keyframes drop {
+  0% { top: -100px;}
+  100% { top: 700px;}
+}
+
+#hero {
+  height: 100px;
+  width: 100px;
+  background-color: dimgrey;
+  position: absolute;
+  left: 100px;
+  top: 500px;
+}
