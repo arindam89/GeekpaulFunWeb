@@ -15,8 +15,10 @@
   height: 600px;
   margin: auto;
   border: 1px solid black;
-  position: relative;
+  position: absolute;
   overflow: hidden;
+  left: 0;
+  right: 0;
 }
 
 #obstacle {
@@ -43,4 +45,20 @@
   position: absolute;
   left: 100px;
   top: 500px;
+}
+
+#controls {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#controls #left, #right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+
+#controls #right {
+  left: 50%;
 }
